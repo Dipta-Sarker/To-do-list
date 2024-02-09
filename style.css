@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 570px;
+    padding: 60px 25px 40px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #142d4c;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#list-img {
+    margin-left: 20px;
+    width: 35px;
+}
+
+.row {
+    background-color: #ececec;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.row #input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #d22780;
+    padding: 19px 47px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.container-list {
+    padding: 2px 25px 0;
+}
+
+.container-list li {
+    list-style-type: none;
+    margin: 25px;
+    font-size: 17px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.container-list li::before {
+    content: "";
+    background-image: url(images/radio.png);
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-position: center;
+    background-size: cover;
+    left: -35px;
+    top: -6px;
+}
+
+.container-list li.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.container-list li.checked::before {
+    background-image: url(images/check.png);
+}
+
+
+li span {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+li span:hover {
+    background-color: #ececec;
+}
+
+
+@media screen and (max-width:425px) {
+    button{
+        padding: 10px 21px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
